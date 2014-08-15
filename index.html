@@ -1,0 +1,38 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Video Test</title>
+  <script src="js/jquery-1.11.1.js"></script>
+  <script src="js/p5.min.js"></script>
+  <script src="js/p5.dom.js"></script>
+  <script src="js/test.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>NERD</h1>
+      </header>
+    </div>
+    <script>
+      var capture;
+
+function setup() {
+  createCanvas(1300, 700);
+  capture = createCapture(VIDEO);
+  capture.size(900);
+  capture.hide();
+}
+
+function draw() {
+  background(255);
+  image(capture, 0, 0, 1300, 700);
+  filter('GRAY');
+}
+
+// new p5();
+    </script>
+
+  </body>
+</html>
