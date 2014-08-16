@@ -1,11 +1,12 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Video Test</title>
+  <title>Fanciful Nerd</title>
   <script src="js/jquery-1.11.1.js"></script>
   <script src="js/p5.min.js"></script>
   <script src="js/p5.dom.js"></script>
   <script src="js/test.js"></script>
+  <script src="js/twitter.js"></script>
 
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,6 +16,7 @@
         <h1>NERD</h1>
       </header>
     </div>
+    <p id="alert">If you can see this, your webcam is not activated!</p>
     <script>
       var capture;
 
@@ -33,6 +35,10 @@ function draw() {
 
 // new p5();
     </script>
-
+<div id="social-media">
+  <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="Who's the most fanciful nerd?" data-hashtags="fancifulnerd">Tweet this, NERD!</a>
+    
+  <iframe id="facebook-widget" src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=21&amp;appId=265218853682249" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
+</div>
   </body>
 </html>
